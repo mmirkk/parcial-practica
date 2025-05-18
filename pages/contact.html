@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - A7</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="../imgs/logo.png" alt="Logo"/>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">☰</label>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pages/services.html">SERVICIOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="contacto-wrapper">
+            <section class="contacto-basico">
+                <h2 class="titulo-seccion">CONTÁCTANOS</h2>
+                <hr class="products-separator">
+                <div class="formulario-contacto">
+                    <form action="#" method="POST">
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="boton-enviar">Enviar</button>
+                    </form>
+                </div>
+            </section>
+
+    <section class="informacion-contacto">
+        <h2 class="titulo-seccion">INFORMACIÓN DE CONTACTO</h2>
+        <hr class="products-separator">
+        <div class="contacto-detalles">
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:info@a7concesionarios.com">info@a7concesionarios.com</a></p>
+            <p><strong>Dirección:</strong> Calle lacalle 7413, Buenos Aires, Argentina</p>
+            <div class="redes-sociales">
+                <p><strong>Redes Sociales:</strong></p>
+                <ul>
+                    <li><a href="https://facebook.com" target="https://facebook.com"><img src="../imgs/icons/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://x.com" target="https://x.com"><img src="../imgs/icons/twitter.svg" alt="X"></a></li>
+                    <li><a href="https://instagram.com" target="https://instagram.com"><img src="../imgs/icons/instagram.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapa-ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28785173.84294963!2d-84.88173226600017!3d-36.462121363301854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e1!3m2!1ses-419!2sar!4v1747554934855!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+        <section class="agenda-turno">
+            <h2 class="titulo-seccion">↓ AGENDA TU TURNO EN EL TALLER ↓</h2>
+            <hr class="products-separator">
+            <p>Completa el siguiente formulario para solicitar un turno en nuestro taller.</p>
+            <div class="formulario-turno">
+                <form action="#" method="POST">
+                    <div class="campo">
+                        <label for="nombre_taller">Nombre y Apellido:</label>
+                        <input type="text" id="nombre_taller" name="nombre_taller" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email_taller">Email:</label>
+                        <input type="email" id="email_taller" name="email_taller" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono_taller">Teléfono:</label>
+                        <input type="tel" id="telefono_taller" name="telefono_taller">
+                    </div>
+                    <div class="campo">
+                        <label for="marca">Marca del Vehículo:</label>
+                        <input type="text" id="marca" name="marca" required>
+                    </div>
+                    <div class="campo">
+                        <label for="modelo">Modelo del Vehículo:</label>
+                        <input type="text" id="modelo" name="modelo" required>
+                    </div>
+                    <div class="campo">
+                        <label for="servicio">Tipo de Servicio:</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Seleccionar servicio</option>
+                            <option value="service_completo">Service Completo</option>
+                            <option value="cambio_aceite">Cambio de Aceite</option>
+                            <option value="revision_itv">Revisión Pre-VTV</option>
+                            <option value="reparacion">Reparación Específica</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="fecha_deseada">Fecha Deseada:</label>
+                        <input type="date" id="fecha_deseada" name="fecha_deseada" required>
+                    </div>
+                    <div class="campo">
+                        <label for="hora_deseada">Hora Deseada:</label>
+                        <input type="time" id="hora_deseada" name="hora_deseada" required>
+                    </div>
+                    <div class="campo">
+                        <label for="comentarios">Comentarios Adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="boton-agendar">Agendar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo-container">
+            <img class="logo" src="../imgs/logo.png" alt="Logo de A7 Concesionarios">
+        </div>
+        <hr class="footer-separator">
+        <div class="footer-content-container">
+            <div class="footer-section footer-about-us">
+                <h4 class="footer-section-title">Sobre Nosotros</h4>
+                <p class="footer-section-item">Nuestra Compañía</p>
+                <p class="footer-section-item">Sala de Prensa</p>
+                <p class="footer-section-item">Nuestra historia</p>
+                <p class="footer-section-item">Trabaja con nosotros</p>
+            </div>
+            <div class="footer-section footer-help">
+                <h4 class="footer-section-title">¿Necesitas Ayuda?</h4>
+                <p class="footer-section-item">Mapa del sitio</p>
+                <p class="footer-section-item">Contáctanos</p>
+            </div>
+            <div class="footer-section footer-legal">
+                <h4 class="footer-section-title">Legal</h4>
+                <p class="footer-section-item">Términos de Uso</p>
+                <p class="footer-section-item">Configuración de cookies</p>
+                <p class="footer-section-item">Política de privacidad</p>
+                <p class="footer-section-item">Política de Cookies</p>
+            </div>
+        </div>
+        <hr class="footer-separator">
+        <p class="footer-copyright">© 2025 A7 Concesionarios. Todos los derechos reservados. Mirko Cicchese</p>
+    </footer>
+
+</body>
+</html>
